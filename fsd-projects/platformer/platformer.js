@@ -1,3 +1,5 @@
+const { createRef } = require("react");
+
 $(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
@@ -27,16 +29,30 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+  toggleGrid();
 
 
     // TODO 2 - Create Platforms
-
-
-
+    createPlatform(300,600,100,5);
+    createPlatform(200,695,100,5);
+    createPlatform(200,500,100,5);
+    createPlatform(400,400,100,5);
+    createPlatform(200,300,100,5);
+    createPlatform(100,200,100,5);
+    createPlatform(400,2,100,5);
+    createPlatform(500,200,100,5);
+    createPlatform(700,300,100,5);
+    createPlatform(800,500,100,5);
+    createPlatform(200,900,100,5);
+    createPlatform(900,200,100,5);
+    createPlatform(300,1100,100,5);
+    createPlatform(400,1200,100,5);
+    createPlatform(1100,300,100,5);
 
     // TODO 3 - Create Collectables
-
+    createCollectable("database",150,130,0.5,0.7);
+    createCollectable("database",500,600,0.5,0.7);
+   
 
 
     
