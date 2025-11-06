@@ -1,5 +1,3 @@
-const { createRef } = require("react");
-
 $(function () {
   // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
@@ -29,35 +27,37 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-  toggleGrid();
+    //toggleGrid();
 
 
     // TODO 2 - Create Platforms
-    createPlatform(300,600,100,5);
-    createPlatform(200,695,100,5);
-    createPlatform(200,500,100,5);
-    createPlatform(400,400,100,5);
-    createPlatform(200,300,100,5);
-    createPlatform(100,200,100,5);
-    createPlatform(400,2,100,5);
-    createPlatform(500,200,100,5);
-    createPlatform(700,300,100,5);
-    createPlatform(800,500,100,5);
-    createPlatform(200,900,100,5);
-    createPlatform(900,200,100,5);
-    createPlatform(300,1100,100,5);
-    createPlatform(400,1200,100,5);
-    createPlatform(1100,300,100,5);
+    createPlatform(175, 625, 200, 20);
+    createPlatform(400, 500, 200, 20);  
+    createPlatform(700, 230, 200, 20);
+    createPlatform(825, 330, 200, 20);
+    createPlatform(1100, 500, 200, 20);
+    createPlatform(600, 625, 200, 20);
+    createPlatform(175, 250, 200, 20);
+    createPlatform(415, 324, 200,20);
+    
+    
+    
+
+
 
     // TODO 3 - Create Collectables
-    createCollectable("database",150,130,0.5,0.7);
+    createCollectable("database",1130,350,0.5,0.7);
+     createCollectable("database",150,130,0.5,0.7);
     createCollectable("database",500,600,0.5,0.7);
-   
+    createCollectable("diamond",520,450,0.5,0.7);
+    createCollectable("max",780,300,0.5,0.7);
 
 
     
     // TODO 4 - Create Cannons
-
+    createCannon("top",850,2000);
+    createCannon("left",480,2000);
+    createCannon("right",320,2000);
 
     
     
@@ -68,3 +68,5 @@ $(function () {
 
   registerSetup(setup);
 });
+
+
